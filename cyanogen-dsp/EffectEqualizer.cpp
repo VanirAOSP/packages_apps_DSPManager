@@ -140,7 +140,7 @@ int32_t EffectEqualizer::command(uint32_t cmdCode, uint32_t cmdSize, void* pCmdD
         }
 
         /* 100 updates per second. */
-        mNextUpdateInterval = int32_t(mSamplingRate / 100.);
+        mNextUpdateInterval = int32_t(mSamplingRate / 200.);
 
         int32_t *replyData = (int32_t *) pReplyData;
         *replyData = 0;
