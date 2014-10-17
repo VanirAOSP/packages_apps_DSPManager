@@ -50,3 +50,6 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT)/vendor/etc
 
 include $(BUILD_PREBUILT)
+
+# Dirac?
+include $(call all-makefiles-under,$(LOCAL_PATH))
