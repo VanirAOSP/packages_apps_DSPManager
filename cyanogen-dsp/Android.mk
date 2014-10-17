@@ -50,3 +50,8 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT)/vendor/etc
 
 include $(BUILD_PREBUILT)
+
+# Dirac?
+ifeq ($(TARGET_ENABLE_DIRAC_AUDIO),true)
+$(call inherit-product, dirac.mk)
+endif
