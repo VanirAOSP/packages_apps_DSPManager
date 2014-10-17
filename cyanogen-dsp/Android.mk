@@ -50,3 +50,6 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT)/vendor/etc
 
 include $(BUILD_PREBUILT)
+
+# Dirac?
+$(call inherit-product, dirac.mk)
